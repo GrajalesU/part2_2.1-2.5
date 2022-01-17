@@ -1,5 +1,6 @@
 import React from "react";
 import Part from "./Part";
+import Statistics from "./Statistics";
 
 const Content = ({ parts }) => {
   return (
@@ -7,6 +8,8 @@ const Content = ({ parts }) => {
       {parts.map((element) => (
         <Part key={element.id} {...element} />
       ))}
+
+      <Statistics parts={parts} />
     </div>
   );
 };
